@@ -33,6 +33,28 @@ h1, h2, h3, h4, h5, h6, p {
   width: fit-content;
 }
 
+.messenger {
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+  /* bottom: 0; */
+  box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+  height: 530px;
+  margin-right: 64px;
+  right: 0;
+  position: fixed;
+  width: 400px;
+  z-index: 2;
+}
+
+.messenger__header {
+  align-items: center;
+  border-bottom: 1px solid var(--main-border-color);
+  display: flex;
+  height: 53px;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
 .navbar {
   height: 100%;
   width: 275px;

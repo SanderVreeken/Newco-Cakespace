@@ -7,7 +7,7 @@ const Owner = () => {
     return (
         <div className='owner'>
             <div className='owner__header'>
-                <h4 className='owner__title'>Profile</h4>
+                <h5 className='owner__title'>Profile</h5>
             </div>
             <div className='owner__main'>
                 <h5 className='owner__name'>SanderVreeken</h5>  
