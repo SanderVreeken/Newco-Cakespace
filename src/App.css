@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+:root {
+  --main-border-color: rgb(230, 236, 240);
+  --secondary-font-color: rgb(101, 119, 134);
+  --button-font-color: rgb(29, 161, 242);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.application {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  height: 100%;
+  width: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: fit-content;
+}
+
+.navbar {
+  height: 100%;
+  width: 275px;
+}
+
+.owner {
+  background-color: rgb(245, 248, 250);
+  border-radius: 15px;
+  height: fit-content;
+  width: 100%;
+}
+
+.owner__check {
+  align-items: center;
+  display: flex;
+  color: var(--secondary-font-color);
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.owner__connect {
+  align-items: center;
+  display: flex;
+  color: var(--button-font-color);
+  padding: 10px 15px;
+}
+
+.owner__header {
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 10px 15px;
+}
+
+.owner__icon {
+  align-items: center;
+  display: flex;
+  height: 13px;
+  margin-right: 8px;
+  justify-content: center;
+  width: 13px;
+}
+
+.owner__location {
+  align-items: center;
+  border-bottom: 1px solid var(--main-border-color);
+  display: flex;
+  font-size: 13px;
+  padding: 10px 15px;
+}
+
+.owner__main {
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 10px 15px;
+}
+
+.owner__message {
+  font-size: 13px;
+}
+
+.owner__name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.owner__validations {
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 10px 15px;
+}
+
+.owner__since {
+  color: var(--secondary-font-color);
+  font-size: 13px;
+}
+
+.searchbar {
+  align-items: center;
+  background-color: rgb(230, 236, 240);
+  border-radius: 22px;
+  display: flex;
+  height: 44px;
+  margin: 10px 0px;
+  padding-right: 6px;
+  width: 100%;
+}
+
+.searchbar__icon {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.searchbar__icon > svg {
+  height: 18px;
+  width: 18px; 
+}
+
+.searchbar__input {
+  background-color: inherit;
+  border: none;
+  font-size: 15px;
+  /* Width which has been adjusted by the difference in div and svg and padding from the right of the searchBar. */
+  width: calc(100% - ((26px * 2) + 6px));
+}
+
+.searchbar__input {
+  outline: none;
+}
+
+.sidebar {
+  height: 100%;
+  margin-left: 32px;
+  width: 350px;
+}
+
+@media screen and (max-width: 1264px) {
+  .navbar {
+    width: 88px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1082px) {
+  .sidebar {
+    margin-left: 0px;
+    visibility: hidden;
+    width: 0px;
   }
 }
