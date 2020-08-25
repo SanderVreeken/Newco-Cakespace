@@ -2,7 +2,7 @@ import React from 'react'
 
 import { AiOutlineCompass, AiOutlineCreditCard, AiOutlineIdcard, AiOutlineMessage, AiOutlinePhone } from 'react-icons/ai'
 
-const Owner = () => {
+const Owner = (props) => {
 
     return (
         <div className='owner'>
@@ -39,7 +39,7 @@ const Owner = () => {
                 </div>
                 <p className='owner__street'>Oostwaarts, Zoetermeer</p>  
             </div>
-            <div className='btn owner__connect'>
+            <div className='btn owner__connect' onClick={() => props.setIsMessengerActive(true)}>
                 <div className='owner__icon'>
                     <AiOutlineMessage />
                 </div>

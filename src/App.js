@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -8,12 +8,14 @@ import Messenger from './components/Messenger'
 import NavBar from './components/NavBar'
 
 function App() {
+  const [isMessengerActive, setIsMessengerActive] = useState(false)
+
   return (
     <div className='application'>
       <NavBar />
-      <Main /> 
+      <Main setIsMessengerActive={setIsMessengerActive}/> 
 
-      <Messenger />
+      <Messenger isMessengerActive={isMessengerActive} setIsMessengerActive={setIsMessengerActive} />
     </div>
   ) 
 }

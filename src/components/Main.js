@@ -3,12 +3,12 @@ import React from 'react'
 import Content from './Content'
 import SideBar from './SideBar'
 
-const Main = () => {
+const Main = (props) => {
 
     return (
         <main className='main'>
             <Content />
-            <SideBar />
+            <SideBar setIsMessengerActive={props.setIsMessengerActive} />
         </main>
     )
 }
