@@ -8,7 +8,7 @@ const SideBar = (props) => {
     return (
         <div className='sidebar'>
             <SearchBar />
-            <Owner setIsMessengerActive={props.setIsMessengerActive}/>
+            <Owner setIsChatting={props.setIsChatting} setIsMessengerActive={props.setIsMessengerActive}/>
         </div>
     )
 }

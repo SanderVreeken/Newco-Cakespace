@@ -1,8 +1,14 @@
 import React from 'react'
 
-import { AiOutlineCompass, AiOutlineCreditCard, AiOutlineIdcard, AiOutlineMessage, AiOutlinePhone } from 'react-icons/ai'
+import { AiOutlineCompass, AiOutlineCreditCard, AiOutlineIdcard, AiOutlineMessage, AiOutlinePhone } from 'react-icons/ai' 
 
 const Owner = (props) => {
+
+    // Function that opens the chat window and redirects to the right chat by changing state.
+    const startChat = () => {
+        props.setIsChatting(true)
+        props.setIsMessengerActive(true)
+    }
 
     return (
         <div className='owner'>
@@ -39,7 +45,7 @@ const Owner = (props) => {
                 </div>
                 <p className='owner__street'>Oostwaarts, Zoetermeer</p>  
             </div>
-            <div className='btn owner__connect' onClick={() => props.setIsMessengerActive(true)}>
+            <div className='btn owner__connect' onClick={() => startChat()}>
                 <div className='owner__icon'>
                     <AiOutlineMessage />
                 </div>
