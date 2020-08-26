@@ -1,17 +1,26 @@
 import React from 'react'
 import { AiOutlineDown, AiOutlineArrowLeft, AiOutlineUp } from 'react-icons/ai'
 
-import ListMessengerBody from './MessengerBodies/ListMessengerBody'
+import Message from './Message'
 
 const Messenger = (props) => {
 
   // Function to decide and load the back arrow icon when the user chatting.
-  const getBackIcon = (isChatting) => {
+  const getBackIcon = isChatting => {
     if (isChatting) {
       return (
         <div className='messenger__icon' onClick={(event) => returnToList(event)}>
           <AiOutlineArrowLeft />
         </div>
+      )
+    }
+  }
+
+  // Function to decide and load the chats in case the user is not chatting already.
+  const getMessagesList = isChatting => {
+    if (!isChatting) {
+      return (
+        <Message />
       )
     }
   }
@@ -34,7 +43,9 @@ const Messenger = (props) => {
           {props.isMessengerActive ? <AiOutlineDown /> : <AiOutlineUp />}
         </div>
       </div>
-      <ListMessengerBody />
+      <div className='messenger__body'>
+        {getMessagesList(props.isChatting)}
+      </div>
     </div>
   )
 }

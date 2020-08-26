@@ -1,7 +1,7 @@
 :root {
   --main-border-color: rgb(230, 236, 240);
+  --main-button-color: rgb(29, 161, 242);
   --secondary-font-color: rgb(101, 119, 134);
-  --button-font-color: rgb(29, 161, 242);
 }
 
 * {
@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100vw;
 }
 
+.btn-primary {
+  background-color: var(--main-button-color);
+  border-color: var(--main-button-color);
+}
+
 .content {
   border-left: 1px solid var(--main-border-color);
   border-right: 1px solid var(--main-border-color);
@@ -31,6 +36,62 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
   height: 100%;
   width: fit-content;
+}
+
+.message {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--main-border-color);
+  display: flex;
+  font-size: 15px;
+  height: 80px;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+}
+
+.message__alias {
+  margin-left: 4px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.message__author {
+  align-items: center;
+  display: flex;
+  width: 243px;
+}
+
+.message__body {
+  margin: 0px 8px;
+}
+
+.message__date {
+  min-width: fit-content;
+}
+
+.message__icon {
+  background-image: url('/images/SanderVreeken.jpg');
+  background-position: center;
+  background-size: contain;
+  border-radius: 24.5px;
+  height: 49px;
+  min-width: 49px;
+  width: 49px;
+}
+
+.message__name {
+  font-weight: bold;
+  width: fit-content;
+}
+
+.message__text {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 243px;
 }
 
 .messenger {
@@ -102,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p {
 .owner__connect {
   align-items: center;
   display: flex;
-  color: var(--button-font-color);
+  color: var(--main-button-color);
   padding: 10px 15px;
 }
 
@@ -151,6 +212,72 @@ h1, h2, h3, h4, h5, h6, p {
 .owner__since {
   color: var(--secondary-font-color);
   font-size: 13px;
+}
+
+.product {
+  margin-top: 53px;
+}
+
+.product__body {
+  display: flex;
+  padding: 10px 15px; 
+}
+
+.product__buy {
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.product__header {
+  align-items: center;
+  border-bottom: 1px solid var(--main-border-color); 
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px; 
+}
+
+.product__information {
+  /* border: 1px solid var(--main-border-color); */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8px;
+  /* padding: 10px 15px;  */
+  width: 100%;
+}
+
+.product__meta {
+  align-items: center;
+  border-bottom: 1px solid var(--main-border-color); 
+  display: flex;
+  font-size: 13px;
+  justify-content: space-around;
+  padding: 10px 15px; 
+  width: 100%;
+}
+
+.product__metatag {
+  align-items: center;
+  display: flex;
+}
+
+.product__metatag > svg {
+  margin-right: 6px;
+}
+
+.product__photo {
+  background-image: url('/images/RhubarbPie.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  min-height: 312px;
+  min-width: 312px;
+}
+
+.product__title {
+  width: 100%;
 }
 
 .searchbar {
