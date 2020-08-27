@@ -26,7 +26,7 @@ const Product = () => {
                 </div>
             </div>
             <div className='product__body'>
-                <div className='product__photo'></div>
+                {/* <div className='product__photo'></div> */}
                 <div className='product__information'>
                     {/* <p className='product__rate'>€10,49</p> */}
                     {/* <div className='btn btn-primary product__buy'>Buy this cake!</div> */}
