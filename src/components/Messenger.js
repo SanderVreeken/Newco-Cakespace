@@ -39,7 +39,7 @@ const Messenger = (props) => {
       <div className='btn messenger__header' onClick={() => props.setIsMessengerActive(!props.isMessengerActive)}>
         {getBackIcon(props.isChatting)}
         <h5 className='messenger__title'>{props.isChatting ? 'SanderVreeken' : 'Messages'}</h5>
-        <div className='messenger__icon'>
+        <div className='btn btn-light messenger__icon'>
           {props.isMessengerActive ? <AiOutlineDown /> : <AiOutlineUp />}
         </div>
       </div>
