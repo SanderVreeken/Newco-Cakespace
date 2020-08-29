@@ -16,7 +16,9 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   height: 100vh;
   justify-content: center;
-  /* overflow: hidden; */
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
+  overflow: hidden;
   width: 100vw;
 }
 
@@ -213,6 +215,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px 24px 0px 12px
 }
 
+.navbar__main {
+  height: fit-content                                                    ;
+}
+
 .owner {
   background-color: rgb(245, 248, 250);
   border-radius: 15px;
@@ -398,7 +404,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 9999px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
   min-height: 39px;
   padding: 8px;
   width: 100%;
@@ -471,3 +477,4 @@ h1, h2, h3, h4, h5, h6, p {
     width: 0px;
   }
 }
+
