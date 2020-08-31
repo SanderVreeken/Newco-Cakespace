@@ -34,6 +34,16 @@ h1, h2, h3, h4, h5, h6, p {
   width: 600px;
 }
 
+.content > .owner {
+  height: 0px;
+  visibility: hidden;
+}
+
+.content__searchbar {
+  height: 0px;
+  visibility: hidden;
+}
+
 .main {
   display: flex;
   justify-content: space-between;
@@ -320,6 +330,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .product__information {
+  border-bottom: 1px solid var(--main-border-color); 
+  border-top: 1px solid var(--main-border-color); 
   display: flex;
   font-size: 13px;
   height: fit-content;
@@ -506,8 +518,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 1082px) {
+  .content__searchbar {
+    padding: 10px 15px;  
+    visibility: visible;
+    width: 100%;
+  }
+
   .messenger {
     visibility: hidden;
+  }
+
+  .content > .owner {
+    border-bottom: 1px solid var(--main-border-color); 
+    border-radius: 0px;
+    border-top: 1px solid var(--main-border-color); 
+    height: fit-content;
+    visibility: visible;
   }
   
   .sidebar {
@@ -517,7 +543,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media screen and (max-width: 702px) {
+@media screen and (max-width: 698px) {
   .content {
     border: none;
     width: 100%;
