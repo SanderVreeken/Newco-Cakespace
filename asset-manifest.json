@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Newco-Cakespace/static/css/main.2db6842e.chunk.css",
-    "main.js": "/Newco-Cakespace/static/js/main.6b92eed6.chunk.js",
-    "main.js.map": "/Newco-Cakespace/static/js/main.6b92eed6.chunk.js.map",
+    "main.css": "/Newco-Cakespace/static/css/main.f01ed618.chunk.css",
+    "main.js": "/Newco-Cakespace/static/js/main.66de7e44.chunk.js",
+    "main.js.map": "/Newco-Cakespace/static/js/main.66de7e44.chunk.js.map",
     "runtime-main.js": "/Newco-Cakespace/static/js/runtime-main.f3a82903.js",
     "runtime-main.js.map": "/Newco-Cakespace/static/js/runtime-main.f3a82903.js.map",
     "static/css/2.11829350.chunk.css": "/Newco-Cakespace/static/css/2.11829350.chunk.css",
     "static/js/2.23142231.chunk.js": "/Newco-Cakespace/static/js/2.23142231.chunk.js",
     "static/js/2.23142231.chunk.js.map": "/Newco-Cakespace/static/js/2.23142231.chunk.js.map",
     "index.html": "/Newco-Cakespace/index.html",
-    "precache-manifest.6454611a6b7552ca4c55b7f989e31067.js": "/Newco-Cakespace/precache-manifest.6454611a6b7552ca4c55b7f989e31067.js",
+    "precache-manifest.64bdf681b8d9f005a24f33a8084ac712.js": "/Newco-Cakespace/precache-manifest.64bdf681b8d9f005a24f33a8084ac712.js",
     "service-worker.js": "/Newco-Cakespace/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/Newco-Cakespace/static/css/2.11829350.chunk.css.map",
-    "static/css/main.2db6842e.chunk.css.map": "/Newco-Cakespace/static/css/main.2db6842e.chunk.css.map",
+    "static/css/main.f01ed618.chunk.css.map": "/Newco-Cakespace/static/css/main.f01ed618.chunk.css.map",
     "static/js/2.23142231.chunk.js.LICENSE.txt": "/Newco-Cakespace/static/js/2.23142231.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f3a82903.js",
     "static/css/2.11829350.chunk.css",
     "static/js/2.23142231.chunk.js",
-    "static/css/main.2db6842e.chunk.css",
-    "static/js/main.6b92eed6.chunk.js"
+    "static/css/main.f01ed618.chunk.css",
+    "static/js/main.66de7e44.chunk.js"
   ]
 }
