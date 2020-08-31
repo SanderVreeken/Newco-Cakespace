@@ -170,8 +170,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .navbar__button > svg {
   height: 26px;
-  visibility: hidden;
   width: 0px;
+  visibility: hidden;
 }
 
 .navbar__header {
@@ -512,6 +512,25 @@ h1, h2, h3, h4, h5, h6, p {
   
   .sidebar {
     margin-left: 0px;
+    visibility: hidden;
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .content {
+    border: none;
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0px;
+    visibility: hidden;
+    width: 0px;
+  }
+
+  /* TODO: Check why the icon needs to be handled individually. */
+  .navbar__button > svg {
     visibility: hidden;
     width: 0px;
   }

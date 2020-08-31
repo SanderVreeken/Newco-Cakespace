@@ -52,7 +52,7 @@ const Product = () => {
             </div>
             <div className='product__information'>
                 <p>€ 12,95</p>
-                <p>Single pie</p>
+                <p>Cakes</p>
                 {getStarsElement(4)}
             </div>
 
