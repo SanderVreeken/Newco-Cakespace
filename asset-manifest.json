@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Newco-Cakespace/static/css/main.9ff48683.chunk.css",
+    "main.js": "/Newco-Cakespace/static/js/main.6b92eed6.chunk.js",
+    "main.js.map": "/Newco-Cakespace/static/js/main.6b92eed6.chunk.js.map",
+    "runtime-main.js": "/Newco-Cakespace/static/js/runtime-main.f3a82903.js",
+    "runtime-main.js.map": "/Newco-Cakespace/static/js/runtime-main.f3a82903.js.map",
+    "static/css/2.11829350.chunk.css": "/Newco-Cakespace/static/css/2.11829350.chunk.css",
+    "static/js/2.23142231.chunk.js": "/Newco-Cakespace/static/js/2.23142231.chunk.js",
+    "static/js/2.23142231.chunk.js.map": "/Newco-Cakespace/static/js/2.23142231.chunk.js.map",
+    "index.html": "/Newco-Cakespace/index.html",
+    "precache-manifest.9ac293186fa7feb99046a11ec04864a2.js": "/Newco-Cakespace/precache-manifest.9ac293186fa7feb99046a11ec04864a2.js",
+    "service-worker.js": "/Newco-Cakespace/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/Newco-Cakespace/static/css/2.11829350.chunk.css.map",
+    "static/css/main.9ff48683.chunk.css.map": "/Newco-Cakespace/static/css/main.9ff48683.chunk.css.map",
+    "static/js/2.23142231.chunk.js.LICENSE.txt": "/Newco-Cakespace/static/js/2.23142231.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3a82903.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.23142231.chunk.js",
+    "static/css/main.9ff48683.chunk.css",
+    "static/js/main.6b92eed6.chunk.js"
+  ]
+}
