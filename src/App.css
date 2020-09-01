@@ -507,13 +507,29 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .user {
+    align-items: center;
     border-radius: 24.5px;
+    display: flex;
     height: 49px;
+    justify-content: center;
+    width: 49px;
+  }
+
+  .user > svg {
+    margin: 0px;
+  }
+
+  .user__body {
+    align-items: center;
+    display: flex;
+    height: 49px;
+    justify-content: center;
     width: 49px;
   }
 
   .user__profile {
     visibility: hidden;
+    margin: 0px;
     width: 0px;
   }
 }
