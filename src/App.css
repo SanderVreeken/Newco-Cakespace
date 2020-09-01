@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-left: 1px solid var(--main-border-color);
   border-right: 1px solid var(--main-border-color);
   height: 100%;
+  overflow-y: scroll;
   width: 600px;
 }
 
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .message__icon {
-  background-image: url('/images/SanderVreeken.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/SanderVreeken.jpg');
   background-position: center;
   background-size: contain;
   border-radius: 24.5px;
@@ -360,7 +361,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .product__photo {
-  background-image: url('/images/RhubarbPie.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/RhubarbPie.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -460,7 +461,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .user__photo {
-  background-image: url('/images/SanderVreeken.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/SanderVreeken.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

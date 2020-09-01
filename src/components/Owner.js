@@ -45,7 +45,13 @@ const Owner = (props) => {
                 </div>
                 <p className='owner__street'>Oostwaarts, Zoetermeer</p>  
             </div>
-            <div className='btn owner__connect' onClick={() => startChat()}>
+            {/* <div className='btn owner__connect' onClick={() => startChat()}>
+                <div className='owner__icon'>
+                    <AiOutlineMessage />
+                </div>
+                <p className='owner__message'>Contact Sander Vreeken</p>  
+            </div>  */}
+            <div className='btn owner__connect'>
                 <div className='owner__icon'>
                     <AiOutlineMessage />
                 </div>
