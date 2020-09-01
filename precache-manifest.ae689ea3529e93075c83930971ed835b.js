@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48cfafb76fd8309247b25599207c2e04",
+    "revision": "fd0740f8d7ef5f5db00389e6a9f28e62",
     "url": "/Newco-Cakespace/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Newco-Cakespace/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "5940a166d5d534b21e32",
-    "url": "/Newco-Cakespace/static/css/main.f01ed618.chunk.css"
+    "revision": "d687b06e8104738d5949",
+    "url": "/Newco-Cakespace/static/css/main.bcaaac78.chunk.css"
   },
   {
     "revision": "dfd8dcdff7ed7e67564e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Newco-Cakespace/static/js/2.23142231.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5940a166d5d534b21e32",
+    "revision": "d687b06e8104738d5949",
     "url": "/Newco-Cakespace/static/js/main.66de7e44.chunk.js"
   },
   {
