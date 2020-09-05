@@ -8,7 +8,7 @@ const Main = (props) => {
     return (
         <main className='main'>
             <Content />
-            <SideBar setIsChatting={props.setIsChatting} setIsMessengerActive={props.setIsMessengerActive} />
+            <SideBar />
         </main>
     )
 }

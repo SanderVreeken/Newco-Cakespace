@@ -9,17 +9,14 @@ import Messenger from './components/Messenger'
 import NavBar from './components/NavBar'
 
 function App() {
-  const [isChatting, setIsChatting] = useState(false)
-  const [isMessengerActive, setIsMessengerActive] = useState(false)
-  const [isMenuBarVisible, setisMenuBarVisible] = useState(false)
 
   return (
     <div className='application'>
       <NavBar/>
-      <Main setIsChatting={setIsChatting} setIsMessengerActive={setIsMessengerActive}/> 
+      <Main /> 
 
       <MenuBar />
-      <Messenger isChatting={isChatting} isMessengerActive={isMessengerActive} setIsChatting={setIsChatting} setIsMessengerActive={setIsMessengerActive} />
+      <Messenger />
     </div>
   ) 
 }

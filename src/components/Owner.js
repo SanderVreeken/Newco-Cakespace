@@ -1,13 +1,22 @@
 import React from 'react'
-
 import { AiOutlineCompass, AiOutlineCreditCard, AiOutlineIdcard, AiOutlineMessage, AiOutlinePhone } from 'react-icons/ai' 
 
-const Owner = (props) => {
+import { useStateValue } from './StateProvider'
+
+const Owner = () => {
+    const [, dispatch] = useStateValue()
+
 
     // Function that opens the chat window and redirects to the right chat by changing state.
     const startChat = () => {
-        props.setIsChatting(true)
-        props.setIsMessengerActive(true)
+        dispatch({
+            type: 'UPDATE_IS_CHATTING',
+            item: true,
+        })
+        dispatch({
+            type: 'UPDATE_IS_MESSENGER_ACTIVE',
+            item: true
+        })
     }
 
     return (
@@ -45,13 +54,7 @@ const Owner = (props) => {
                 </div>
                 <p className='owner__street'>Oostwaarts, Zoetermeer</p>  
             </div>
-            {/* <div className='btn owner__connect' onClick={() => startChat()}>
-                <div className='owner__icon'>
-                    <AiOutlineMessage />
-                </div>
-                <p className='owner__message'>Contact Sander Vreeken</p>  
-            </div>  */}
-            <div className='btn owner__connect'>
+            <div className='btn owner__connect' onClick={() => startChat()}>
                 <div className='owner__icon'>
                     <AiOutlineMessage />
                 </div>
