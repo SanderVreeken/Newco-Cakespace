@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6, p {
   visibility: hidden;
 }
 
+.content__header {
+  height: 0px;
+  visibility: hidden;
+}
+
 .content__searchbar {
   height: 0px;
   visibility: hidden;
@@ -50,6 +55,15 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
   height: 100%;
   width: fit-content;
+}
+
+.menubar {
+  visibility: hidden;
+  width: 0px;
+}
+
+.menubar > .navbar {
+  visibility: hidden;
 }
 
 .message {
@@ -566,16 +580,43 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
   }
 
+  .content__header {
+    border-bottom: 1px solid var(--main-border-color);
+    height: fit-content;
+    padding: 10px 15px;  
+    visibility: visible;
+  }
+
+  .menubar {
+    background-color: white;
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    width: fit-content;
+    /* visibility: hidden; */
+    z-index: 94;
+  }
+
+  .menubar > .navbar {
+    padding: 0px 10px;
+    visibility: inherit;
+    width: fit-content;
+  }
+
   .navbar {
     padding: 0px;
     visibility: hidden;
     width: 0px;
   }
 
-  /* TODO: Check why the icon needs to be handled individually. */
+  /* The svg within the button is here set to hidden, while only the one within the menubar is set back to visible again. */
   .navbar__button > svg {
     visibility: hidden;
-    width: 0px;
+  }
+
+  .menubar > .navbar > .navbar__main > .navbar__button > svg {
+    visibility: inherit;
   }
 }
 
