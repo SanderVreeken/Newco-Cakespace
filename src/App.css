@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .message__icon {
-  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/SanderVreeken.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/users/SanderVreeken.jpg');
   background-position: center;
   background-size: contain;
   border-radius: 24.5px;
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .product__photo {
-  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/RhubarbPie.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/photos/RhubarbPie.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -431,11 +431,42 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 
-.searchbar {
+.result {
   align-items: center;
+  background-color: white;
+  border-bottom: 1px solid var(--main-border-color);
+  border-radius: 0px; 
+  display: flex;
+  height: fit-content;
+  padding: 10px 15px; 
+  width: 100%;
+}
+
+.result__name {
+  font-weight: bold;
+}
+
+.result__alias, .result__name {
+  font-size: 15px;
+  text-align: left;
+}
+
+.result__photo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9999px;
+  height: 39px;
+  width: 39px;
+}
+
+.result__user {
+  margin: 0px 12px;
+}
+
+.searchbar {
   background-color: rgb(230, 236, 240);
   border-radius: 22px;
-  display: flex;
   height: 44px;
   margin: 10px 0px;
   padding-right: 6px;
@@ -465,6 +496,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 .searchbar__input {
   outline: none;
+}
+
+.searchbar__main {
+  align-items: center;
+  display: flex;
+}
+
+.searchbar__results {
+  background-color: white;
+  box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+  height: fit-content;
+  position: relative;
+  width: calc(100% + 6px);
+  z-index: 20;
 }
 
 .sidebar {
@@ -500,7 +545,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .user__photo {
-  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/SanderVreeken.jpg');
+  background-image: url('https://sandervreeken.github.io/Newco-Cakespace/images/users/SanderVreeken.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
