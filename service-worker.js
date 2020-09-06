@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Newco-Cakespace/precache-manifest.f110d09168e1d1e44b0fe80b9014c974.js"
+  "/Newco-Cakespace/precache-manifest.b294ef1fb1985ed168c049170151f5f8.js"
 );
 
 self.addEventListener('message', (event) => {
