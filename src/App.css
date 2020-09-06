@@ -47,9 +47,28 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .content__header {
+  align-items: center;
+  display: flex;
   height: 0px;
+  justify-content: flex-end;
   visibility: hidden;
 }
+
+.content__icon {
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 9999px;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  width: 49px;
+}
+
+.content__icon > svg {
+  height: 26px;
+  width: 26px;
+} 
 
 .content__searchbar {
   height: 0px;

@@ -1,5 +1,6 @@
 import React from 'react'
-import { AiFillHeart, AiOutlineClockCircle, AiOutlineEye, AiOutlineHeart, AiFillStar } from 'react-icons/ai'
+// AiFillHeart
+import { AiOutlineClockCircle, AiOutlineEye, AiOutlineHeart, AiFillStar } from 'react-icons/ai'
 
 const Product = () => {
 

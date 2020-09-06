@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
+
 import NavBar from './NavBar'
+import { useStateValue } from './StateProvider'
 
 const MenuBar = () => {
-    const [isMenuBarVisible, setisMenuBarVisible] = useState(false)
+    const [{ isMenuBarActive }] = useStateValue()
 
     return <div className='menubar' style={{
-        visibility: isMenuBarVisible ? 'visible' : 'hidden'
+        // visibility: isMenuBarVisible ? 'visible' : 'hidden',
+        visibility: isMenuBarActive ? 'visible' : 'hidden'
     }}>
         <NavBar />
-        <div className='menubar__shadow'></div>     
     </div>
 }
 
